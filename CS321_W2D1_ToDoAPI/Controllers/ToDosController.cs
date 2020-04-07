@@ -11,8 +11,9 @@ namespace CS321_W2D1_ToDoAPI.Controllers
         private readonly IToDoService _todoService;
 
         // Constructor
-        public ToDosController(/* HINT: add an IToDoService parameter here */)
+        public ToDosController(IToDoService toDoService)
         {
+            _todoService = toDoService;
             // HINT: store a reference to the service in _todoService so we can use below
         }
 
